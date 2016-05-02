@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul {
+    font-size: 2em;
+}
+
+#bannerCorrection {
+    padding-top: 170px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #000099;
+}

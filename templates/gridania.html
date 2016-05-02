@@ -1,0 +1,35 @@
+{% extends 'template_parent2.html'%}
+{% import 'template_macro2.html' as macros%}
+
+{% block title%} FFXIV Beginners {% endblock%}
+
+{% block head %}
+    {{super()}}
+{% endblock %}
+
+{% block navbar%}
+    {{super()}}
+{% endblock navbar %}
+
+    
+{% block content%}
+    <h2> 
+        Here we'll go through the types of classes available to be played in FFXIV, and the ones you can start off with.</br>
+        The class you pick determines which city you start in. In addition, once you complete your Level 10 Class Quest, you can unlock the other classes! Click on a class to see which city they belong to.
+    </h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Tank Classes:</h2>
+                <ul>
+                    <li>Gladiator</li>
+                    <li>Marauder</li>
+                </ul>
+            </div>
+            <div class="col-md-4">{{macros.display_healers(healers)}}</div>
+            <div class="col-md-4">{{macros.display_deeps(deeps)}}</div>
+        </div>
+    </div>
+
+{% endblock content %}
