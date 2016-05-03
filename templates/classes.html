@@ -1,5 +1,5 @@
-{% extends 'template_parent2.html'%}
-{% import 'template_macro2.html' as macros%}
+{% extends 'template_parent.html'%}
+{% import 'template_macro.html' as macros%}
 
 {% block title%} FFXIV Beginners {% endblock%}
 
@@ -13,22 +13,37 @@
 
     
 {% block content%}
-    <h2> 
+    <h2 class="text-center"> 
         Here we'll go through the types of classes available to be played in FFXIV, and the ones you can start off with.</br>
         The class you pick determines which city you start in. In addition, once you complete your Level 10 Class Quest, you can unlock the other classes! Click on a class to see which city they belong to.
     </h2>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Tank Classes:</h2>
+        <div class="row" >
+            <div class="col-md-4" style="border-top: 2px solid black">
+                <h2 id="boldun" class="text-left">Tank Classes:</h2>
                 <ul>
-                    <li>Gladiator</li>
-                    <li>Marauder</li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Gladiator</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Marauder</a></li>
                 </ul>
             </div>
-            <div class="col-md-4">{{macros.display_healers(healers)}}</div>
-            <div class="col-md-4">{{macros.display_deeps(deeps)}}</div>
+            <div class="col-md-4" style="border-top: 2px solid black">
+                <h2 id="boldun" class="text-left">Healer Class:</h2>
+                <ul>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/gridania">Conjurer</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4" style="border-top: 2px solid black">
+                <h2 id="boldun" class="text-left">DPS Classes:</h2>
+                <ul>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Pugilist</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/gridania">Lancer</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Rogue</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/gridania">Archer</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Thaumaturge</a></li>
+                    <li><a href="https://ffwebsite-dickin14.c9users.io/uldah">Arcanist</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

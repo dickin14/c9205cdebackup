@@ -1,5 +1,5 @@
-{% extends 'template_parent2.html'%}
-{% import 'template_macro2.html' as macros%}
+{% extends 'template_parent.html'%}
+{% import 'template_macro.html' as macros%}
 
 {% block title%} FFXIV Beginners {% endblock%}
 
@@ -13,15 +13,14 @@
 
     
 {% block content%}
-    <h2> 
-        Welcome to FFXIV Beginners"</br>
-        Wanted to get into basics yadda yadda don't know what classes and stuff? Here's a quick overview of the things!
+    <h2 class="text-center"> 
+        Welcome to FFXIV Beginners</br>
+        Ever though about getting started with Final Fantasy XIV? Ever wanted to know a little more about the basics of the game? Well, maybe we can help!</br>
+        Here we'll give you a little overview of the different classes you can play in the game, in addition to a little bit of insight into the starting cities.</br>
+        Click on the 'Classes' button below, or go straight to looking at some of the cities using the navigation bar at the top.
     </h2>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div></div>
-            
-        </div>
+    <div class="container-fluid text-center">
+        <button type="button" style="font-weight:bold; background-color:#0000FF; font-size:2em; margin-top:30px;" class="btn btn-primary btn-lg" onclick="location.href='https://ffwebsite-dickin14.c9users.io/classes'">Classes</button>
     </div>
 {% endblock content %}

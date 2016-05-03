@@ -1,26 +1,32 @@
 {% macro display_uldah(uldah) %}
-<h2>Classes in Ul'dah:</h2>
-<ul class="list-inline">
+<h2 id="boldun">Classes in Ul'dah:</h2>
+<div class="text-center">
+<ul class="list-inline" style="font-size:2em">
     {% for classes in uldah%}
-    <li>{{ classes }}</li>
+    <li>{{ classes }} </li>
     {% endfor %}
 </ul>
+</div>
 {% endmacro %}
 
 {% macro display_gridania(gridania) %}
-<h2>Classes in Gridania:</h2>
-<ul class="list-inline">
+<h2 id="boldun">Classes in Gridania:</h2>
+<div class="text-center">
+<ul class="list-inline" style="font-size:2em">
     {% for classes in gridania%}
-    <li>{{ classes }}</li>
+    <li>{{ classes }} </li>
     {% endfor %}
 </ul>
+</div>
 {% endmacro %}
 
 {% macro display_limsa(limsa) %}
-<h2>Classes in Limsa Lominsa:</h2>
-<ul class="list-inline">
+<h2 id="boldun">Classes in Limsa Lominsa:</h2>
+<div class="text-center">
+<ul class="list-inline" style="font-size:2em">
     {% for classes in limsa%}
-    <li>{{ classes }}</li>
+    <li>{{ classes }} </li>
     {% endfor %}
 </ul>
+</div>
 {% endmacro %}

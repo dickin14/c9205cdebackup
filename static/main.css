@@ -6,6 +6,22 @@ body {
 
 nav ul {
     font-size: 2em;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+a:link {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a:visited {
+    color: black;
 }
 
 #bannerCorrection {
@@ -13,4 +29,14 @@ nav ul {
     padding-bottom: 10px;
     font-weight: bold;
     color: #000099;
+}
+
+#boldun {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#botbor {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
