@@ -1,0 +1,26 @@
+{% extends 'template_parent.html'%}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %} FFXIV Beginners {% endblock %}
+
+{% block head %}
+    {{super()}}
+{% endblock %}
+
+{% block navbar%}
+    {{super()}}
+{% endblock navbar %}
+
+{% block content %}
+    <div class="container">
+
+        <ul class="entries">
+            {% for entry in entries %}
+                <li style="border-bottom: 2px solid black"><h2 class="text-left">{{ entry.charname|capitalize }}</h2><h3>{{ entry.server|capitalize }}</h3><h4 style="padding-bottom:20px;">{{ entry.gameclass|capitalize }}</br>{{ entry.reason }}</h4>
+            {% endfor %}
+        </ul>
+
+
+    </div>
+
+{% endblock %}
