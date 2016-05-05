@@ -59,12 +59,48 @@ a:hover {
     font-size: 1.5em;
 }
 
-@media(max-width:600px) {
+@media(max-width:800px) {
     .container-fluid {
         margin-top:0px;
     }
     nav ul {
-        font-size:0.8em;
+        font-size:0.6em;
         max-height:100px;
+    }
+    p {
+        font-size:0.6em;
+    }
+    h1 {
+        font-size:1em;
+    }
+    h2 {
+        font-size:0.8em;
+    }
+    h3 {
+        font-size:0.7em;
+    }
+    h4, #caro, li {
+        font-size:0.6em;
+    }
+    img {
+        max-width:300px;
+        max-height:400px;
+    }
+    #gap {
+        color:black;
+        margin-bottom:100px;
+    }
+    #bgimg2 {
+        background-size: 100% 30%;
+    }
+    #bgimg {
+        background-size: 100% 10%;
+    }
+    #bannerCorrection {
+        margin-top:100px;
+    }
+    #car {
+        max-width:40px;
+        max-height:70px;
     }
 }

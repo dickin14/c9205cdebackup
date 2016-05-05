@@ -12,7 +12,9 @@
 {% endblock navbar %}
 
 {% block content %}
-<div class="container-fluid" style="margin-top:-50px; background-color:black; background-image:url('static/images/cm_bg.png'); background-repeat:no-repeat; background-position:center top;">
+<div id="gap">
+</div>
+<div id="bgimg2" class="container-fluid" style="margin-top:-50px; background-color:black; background-image:url('static/images/cm_bg.png'); background-repeat:no-repeat; background-position:center top;">
     <div id="bannerCorrection" class="text-center">
         <h1 style="padding-top:30px;">Comments</h1>
 </div>
@@ -20,11 +22,14 @@
 
         <ul class="entries">
             {% for entry in entries %}
-                <li style="border-bottom: 2px solid black"><h2 class="text-left">{{ entry.charname|capitalize }}</h2><h3>{{ entry.server|capitalize }}</h3><h4 style="padding-bottom:20px;">{{ entry.gameclass|capitalize }}</br>{{ entry.reason }}</h4>
+                <li style="border-bottom: 2px solid silver"><h2 class="text-left" style="margin-bottom:-20px;">{{ entry.charname|capitalize }}</h2><h3>{{ entry.server|capitalize }}</h3><h4 style="padding-bottom:20px;">{{ entry.gameclass|capitalize }}</br>{{ entry.reason }}</h4>
             {% endfor %}
         </ul>
 
 
+    </div>
+    <div>
+        <img id="car" src="static/images/carby.png" alt="Carbuncle" align="right" style="max-width:200px; max-height:300; margin-bottom:60px; margin-right:60px;"></img>
     </div>
 </div>
 {% endblock %}
