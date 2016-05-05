@@ -13,9 +13,9 @@
 
     
 {% block content%}
-    <h2> 
+    <h1> 
         Welcome to Ul'dah!
-    </h2>
+    </h1>
 
     <div id="botbor" class="container-fluid">
         <div class="row">
@@ -26,11 +26,55 @@
                 <center><img src="static/images/ul_nald.png" alt="Map of Ul'dah's Steps of Nald"></img></center>
             </div>
         </div>
-    </div>
+        
+        <div id="botbor" class="row">
+            <div class="col-md-12">
+                <h2>
+                    Ul'dah! The city amongst the sand where merchants from all around come to peddle their wares.</br>
+                    Overseen by the Sultana, Nanamo Ul Namo, and the leader of The Immortal Flames, Raubahn Aldynn, this city is also home to the Weavers', Goldsmiths', Alchemists', and Miners' Guilds, so if you take any interest in any of them, you can stop by and join after you reach level 10!
+                </h2>
+            </div>
+        </div>
     
     {% set uldah = ['Gladiator', 'Pugilist', 'Thaumaturge']%}
     {{macros.display_uldah(uldah)}}
     
-    
+        <div class="row">
+            <div class="col-md-4">
+                <img src="static/images/gld.png" alt="Picture of a Gladiator">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/pug.png" alt="Picture of a Pugilist">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/thm.png" alt="Picture of a Thaumaturge">
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom:150px;">
+            <div class="col-md-4">
+                <h3>
+                    Gladiators (GLD for short) wield their sword and shield for the protection of the people. They have very high defense which they use to soak up the damage from their enemies whilst their allies pummel away at them.</br>
+                    They make use of their enmity-generating skills to keep the attention of enemies, in addition to defensive buffs (beneficial statuses) to help stay alive.</br>
+                    At level 30, if they also have a Conjurer at level 15, they can embark upon a journey to become a Paladin (PLD), the higher form of GLD, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    Pugilists (PUG for short) use their fists to pummel their opponents. They are very fast thanks to the Greased Lightning buff (beneficial status) they can achieve as they continue to fight.</br>
+                    They make use of their positional skills, attacking from behind and the flank as necessary, switching between three stances as they do so to achieve Greased Lightning.</br>
+                    At level 30, if they also have a Lancer at level 15, they can embark upon a journey to become a Monk (MNK), the higher form of PUG, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    Thaumaturgists (THM for short) use their spells to obliterate their foes. They switch between the damaging Astral Fire and regenerative Umbral Ice stances as they cast to never run out of energy.</br>
+                    They make use of their fire spells to build Astral Fire and boost their power, switching to Umbral Ice with their ice spells to regenerate their magic once depleted from casting fire spells.</br>
+                    At level 30, if they also have an Archer at level 15, they can embark upon a journey to become a Black Mage (BLM), the higher form of THM, for extra abiltiies and equipment.
+                </h3>
+            </div>
+        </div>
+        
+    </div>
 
 {% endblock content %}

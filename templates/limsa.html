@@ -13,9 +13,9 @@
 
     
 {% block content%}
-    <h2> 
+    <h1> 
         Welcome to Limsa Lominsa!
-    </h2>
+    </h1>
 
     <div id="botbor" class="container-fluid">
         <div class="row">
@@ -26,9 +26,57 @@
                 <center><img src="static/images/lim_up.png" alt="Map of the Upper Decks of Limsa Lominsa"></img></center>
             </div>
         </div>
-    </div>
+        
+        <div id="botbor" class="row">
+            <div class="col-md-12">
+                <h2>
+                    Limsa! The port city near the ocean where buccaneers and hearty seafarers can stop for a drink.</br>
+                    Overseen by the leader of The Maelstrom, Merlwyb Bloefhiswyn, this city is also home to the Blacksmiths', Armorers', Culinarian's, and Fishers' Guilds, so if you take any interest in any of them, you can stop by and join after you reach level 10!
+                </h2>
+            </div>
+        </div>
     
     {% set limsa = ['Marauder', 'Rogue', 'Arcanist']%}
     {{macros.display_limsa(limsa)}}
+    
+        <div class="row">
+            <div class="col-md-4">
+                <img src="static/images/mrd.png" alt="Picture of a Marauder">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/rog.png" alt="Picture of a Rogue">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/acn.png" alt="Picture of a Arcanist">
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom:150px;">
+            <div class="col-md-4">
+                <h3>
+                    Marauders (MRD for short) use their axes to distract their enemies from their team and subdue them in the process. Their high health allows them to take a beating from enemies so their allies don't have to.</br>
+                    They make use of their enmity-generating skills to keep the attention of enemies, in addition to defensive buffs (beneficial statuses) to help stay alive.</br>
+                    At level 30, if they also have a Gladiator at level 15, they can embark upon a journey to become a Warrior (WAR), the higher form of MRD, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    NOTE- You cannot begin the game as a Rogue, you must unlock it upon completing the level 10 quest given to you at your class' guild.
+                    Rogues (ROG for short) use their wits and daggers to assail their enemies. They can hide themselves from enemies before combat, delivering devastating opening blows.</br>
+                    They make use of their stealth and eventually their positional skill, attacking from behind as necessary to deliver heavy hits, and can deal more damage once their target's health is below 20%.</br>
+                    At level 30, if they also have a Pugilist at level 15, they can embark upon a journey to become a Ninja (NIN), the higher form of ROG, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    Arcanists (ACN for short) use their spells to apply debuffs (debilitating statuses) to their opponents, but also have the support of a pet to help them.</br>
+                    They make use of their Damage over Time (DoT) spells to deal steady damage to enemies for the duration of the spell, and can command their pet to use certain attacks as they see fit.</br>
+                    At level 30, if they also have a Thaumaturge at level 15, they can embark upon a journey to become a Summoner (SMN), the higher form of ACN, for extra abiltiies and equipment.</br>
+                    ADDITIONALLY, at level 30 they can also embark upon a journey to become a Scholar (SCH) if they have a Conjurer at level 15, unlocking more healing abilities and equipment.
+                </h3>
+            </div>
+        </div>
+        
+    </div>
 
 {% endblock content %}

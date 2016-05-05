@@ -13,9 +13,9 @@
 
     
 {% block content%}
-    <h2> 
+    <h1> 
         Welcome to Gridania!
-    </h2>
+    </h1>
 
     <div id="botbor" class="container-fluid">
         <div class="row">
@@ -26,9 +26,55 @@
                 <center><img src="static/images/grid_old.png" alt="Map of Old Gridania"></img></center>
             </div>
         </div>
-    </div>
+        
+        <div id="botbor" class="row">
+            <div class="col-md-12">
+                <h2>
+                    Gridania! The city amidst a forest where naturalists from all over come to take in the sights.</br>
+                    Overseen by the leader of The Order of the Twin Adder, Kan-E-Senna, this city is also home to the Leatherworkers', Carpenters', and Botanists' Guilds, so if you take any interest in any of them, you can stop by and join after you reach level 10!
+                </h2>
+            </div>
+        </div>
     
     {% set gridania = ['Lancer', 'Archer', 'Conjurer']%}
     {{macros.display_gridania(gridania)}}
+    
+        <div class="row">
+            <div class="col-md-4">
+                <img src="static/images/lnc.png" alt="Picture of a Lancer">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/arc.png" alt="Picture of a Archer">
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/cnj.png" alt="Picture of a Conjurer">
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom:150px;">
+            <div class="col-md-4">
+                <h3>
+                    Conjurer (CNJ for short) use their spells to soothe the wounds of their allies. They are versatile in healing and damage-dealing thanks to their Cleric Stance</br>
+                    They make use of their healing spells to heal and remove debuffs (debilitating statuses) from allies, and being able to go into Cleric Stance to make use of their damaging spells.</br>
+                    At level 30, if they also have an Arcanist at level 15, they can embark upon a journey to become a White Mage (WHM), the higher form of CNJ, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    Lancer (LNC for short) use their spears to deliver heavy-hitting strikes to their foes. They rise in power thanks to their combo attacks and buffs (beneficial statuses)</br>
+                    They make use of their positional skills, attacking from behind and the flank as necessary, to buff themselves and deal more damage.</br>
+                    At level 30, if they also have a Marauder at level 15, they can embark upon a journey to become a Dragoon (DRG), the higher form of LNC, for extra abiltiies and equipment.
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    Archers (ARC for short) use their bows to strike from afar. They have lots of extra attacking-abilities that they can use between their normal attacks for extra damage.</br>
+                    They make use of their buffs (beneficial statuses) and offensive abilities to deliver a barrage of blows to their enemies.</br>
+                    At level 30, if they also have a Pugilist at level 15, they can embark upon a journey to become a Bard (BRD), the higher form of ARC, for extra abiltiies and equipment.
+                </h3>
+            </div>
+        </div>
+        
+    </div>
 
 {% endblock content %}

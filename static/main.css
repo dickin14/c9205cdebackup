@@ -9,7 +9,7 @@ nav ul {
     color: black;
 }
 
-h2 {
+h1,h2 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -40,4 +40,11 @@ a:visited {
 #botbor {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#caro {
+    color: #FFFF00;
+    outline: black;
+    font-weight: bold;
+    font-size: 2em;
 }
