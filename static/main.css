@@ -2,34 +2,44 @@ body {
     font-family: Arial, Verdana, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
+    background-color:black;
+    color: silver;
 }
 
 nav ul {
-    font-size: 2em;
+    font-size: 1em;
     color: black;
 }
 
 h1,h2 {
     text-align: center;
     padding-bottom: 10px;
+    color: silver;
+}
+
+h3, h4, p{
+    color: silver;
 }
 
 a:link {
-    color: black;
+    color: silver;
     font-weight: bold;
     font-size: 1.2em;
 }
 
 a:visited {
-    color: black;
+    color: silver;
+}
+
+a:hover {
+    color:yellow;
 }
 
 #bannerCorrection {
-    padding-top: 170px;
-    padding-bottom: 10px;
+    margin-top: 270px;
+    margin-bottom: 30px;
     font-weight: bold;
-    color: #000099;
-    border-bottom: 2px solid black;
+    color: #FFFFFF;
 }
 
 #boldun {
@@ -46,5 +56,15 @@ a:visited {
     color: #FFFF00;
     outline: black;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+@media(max-width:600px) {
+    .container-fluid {
+        margin-top:0px;
+    }
+    nav ul {
+        font-size:0.8em;
+        max-height:100px;
+    }
 }

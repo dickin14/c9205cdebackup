@@ -13,19 +13,12 @@
 
     
 {% block content%}
-    <h1> 
+<div class="container-fluid" style="margin-top:-50px; background-color:black; background-image:url('static/images/cm_bg.png'); background-repeat:no-repeat; background-position:center top;">
+    <div id="bannerCorrection" class="text-center">
+</div>
+    <h1 style="padding-top:30px;"> 
         Welcome to Ul'dah!
     </h1>
-
-    <div id="botbor" class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <center><img src="static/images/ul_thal.png" alt="Map of Ul'dah's Steps of Thal"></img></center>
-            </div>
-            <div class="col-md-6">
-                <center><img src="static/images/ul_nald.png" alt="Map of Ul'dah's Steps of Nald"></img></center>
-            </div>
-        </div>
         
         <div id="botbor" class="row">
             <div class="col-md-12">
@@ -44,14 +37,14 @@
                 <img src="static/images/gld.png" alt="Picture of a Gladiator">
             </div>
             <div class="col-md-4">
-                <img src="static/images/pug.png" alt="Picture of a Pugilist">
+                <img src="static/images/pug.png" style="margin-top:70px;" alt="Picture of a Pugilist">
             </div>
             <div class="col-md-4">
-                <img src="static/images/thm.png" alt="Picture of a Thaumaturge">
+                <img src="static/images/thm.png" style="max-height:700px" alt="Picture of a Thaumaturge">
             </div>
         </div>
         
-        <div class="row" style="margin-bottom:150px;">
+        <div class="row">
             <div class="col-md-4">
                 <h3>
                     Gladiators (GLD for short) wield their sword and shield for the protection of the people. They have very high defense which they use to soak up the damage from their enemies whilst their allies pummel away at them.</br>
@@ -75,6 +68,15 @@
             </div>
         </div>
         
-    </div>
-
+        <div id="botbor" class="container-fluid" style="margin-top:30px; margin-bottom:150px;">
+        <div class="row">
+            <div class="col-md-6">
+                <center><img src="static/images/ul_thal.png" alt="Map of Ul'dah's Steps of Thal"></img></center>
+            </div>
+            <div class="col-md-6">
+                <center><img src="static/images/ul_nald.png" alt="Map of Ul'dah's Steps of Nald"></img></center>
+            </div>
+        </div>
+        
+</div>
 {% endblock content %}
