@@ -38,7 +38,7 @@ def view_form():
             con.commit()
 
         return redirect(url_for('classes2'))
-    return render_template('classes.html', form=form)
+    return render_template('classes2.html', form=form)
     
 @app.route('/classes2')
 def classes2():
